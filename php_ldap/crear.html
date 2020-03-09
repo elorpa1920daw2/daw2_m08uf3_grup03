@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<form action="crear.php"	 method=post  class="mx-auto	" style="width: 500px; margin-top: 10%;"><br>
+<table cellspacing=3 cellpadding=3 >
+		   <tr>
+			  <td>Nom : </td>
+			  <td><input type=text name=givenname size=16 maxlength=15></td>
+		   </tr>
+		   <tr>
+           <tr>
+			  <td>Cognom : </td>
+			  <td><input type=text name=sn size=16 maxlength=15></td>
+		   </tr>
+		   <tr>
+			  <td>Unitat organitzativa: </td>
+              <td>
+							<div class="form-group">
+    <select class="form-control"name="ou" id="exampleFormControlSelect1">
+						<option value="usuaris">usuaris</option>
+                    <option value="administradors">administradors</option>
+                    <option value="desenvolupadors">desenvolupadors</option>
+    						</select>
+  						</div>
+                
+              </td>
+					</tr>
+					<tr>
+            <td>Poseu un titol: </td>
+            <td><input type=text name=title size=16 maxlength=15></td>                     
+           
+           </tr>
+           <tr>
+            <td>Poseu un uid: </td>
+            <td><input type=text name=uid size=16 maxlength=15></td>                     
+           
+           </tr>
+           <tr>
+			  <td>Telephone number : </td>
+			  <td><input type=text name=telephonenumber size=16 maxlength=15></td>
+		   </tr>
+           <tr>
+			  <td>Phone number : </td>
+			  <td><input type=text name=mobile size=16 maxlength=15></td>
+		   </tr>
+			 </tr>
+        <tr>
+			  <td>Adreça de l'usuari : </td>
+			  <td><input type=text name=adres size=16 maxlength=15></td>
+		   </tr>
+			 <tr>
+			  <td> gidNumber: </td>
+			  <td><input type=text name=gidnumber size=16 maxlength=15></td>
+		   </tr>
+			 <tr>
+			  <td> uidNumber: </td>
+			  <td><input type=text name=uidnumber size=16 maxlength=15></td>
+		   </tr>
+			 <tr>
+			  <td>Descripció de l'usuari : </td>
+			  <td><input type=text name=description size=16 maxlength=15></td>
+		   </tr>
+           
+		   <tr>
+		   <tr>
+			  <td>Contrasenya del nou usuari LDAP: </td>
+			  <td><input type=password name=password size=16 maxlength=15></td>
+		   </tr>
+		   <tr>
+			
+
+			  <td> <button type="submit" name="submit" class="btn btn-primary">Afegir Usuari</button></td>
+		   </tr>
+		</table>
+
+</form>
+<form action="http://localhost/php_ldap/main.html" method="GET">
+	<button name="submit" class="btn btn-primary" value="inici">Pagina principal</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <form action="http://localhost/php_ldap/modificar.php" method="POST" class="mx-auto	" style="width: 500px; margin-top: 10%;">
+            <table cellspacing=3 cellpadding=3 >
+                <tr>
+                   <td>UID del usuari a modificar:</td>
+                   <td><input type="text" name="uid_usr" size=16 maxlength=15></td>
+                </tr>
+                <tr>
+                    <td>Indica la OU del usuari a modificar:</td>
+                    <td><input type="text" name="ou" size=16 maxlength=15></td>
+                 </tr>
+                 <tr>
+                    <td>UID nou del usuari: </td>
+                    <td><input type="text" name="uid_num" size=16 maxlength=15></td>
+                 </tr>
+                 <tr>
+                    <td>GID nou del usuari: </td>
+                    <td><input type="text" name="gid_num" size=16 maxlength=15></td>
+                 </tr>
+                 <tr>
+                     <td><button class="btn btn-primary" type="submit">Enviar</button></td>
+                 </tr>
+                </table>
+        </form>
+    
+        <form action="http://localhost/php_ldap/main.html" method="GET">
+            <button name="submit" class="btn btn-primary" value="inici">Pagina principal</button>
+        </form>
+    </body>
+</html>
